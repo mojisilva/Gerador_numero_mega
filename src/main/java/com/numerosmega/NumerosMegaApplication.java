@@ -17,6 +17,7 @@ public class NumerosMegaApplication extends Application {
         stage.setTitle("Gerador Mega-Sena");
         stage.getIcons().add(new Image(Objects.requireNonNull(NumerosMegaApplication.class.getResourceAsStream("icon.png"))));
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
