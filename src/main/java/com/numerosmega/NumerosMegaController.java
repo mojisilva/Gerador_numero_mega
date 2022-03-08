@@ -24,7 +24,6 @@ public class NumerosMegaController {
                 numeros.add(gerador.nextInt(1, 60));
             }
             formato = String.valueOf(numeros);
-
             inputTF.setText(formato.replace("[", "").replace(",", " -").replace("]", ""));
         }
         numeros.clear();
