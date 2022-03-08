@@ -4,20 +4,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#onHelloButtonClick" prefHeight="130.0" prefWidth="320.0" style="-fx-background-color: #00ced1;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.numerosmega.NumerosMegaController">
-   <children>
-      <Button fx:id="gerarBt" layoutX="5.0" layoutY="74.0" onAction="#onHelloButtonClick" prefHeight="40.0" prefWidth="150.0" text="Gerar">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-      <Button fx:id="fecharBT" layoutX="166.0" layoutY="74.0" prefHeight="40.0" prefWidth="150.0" text="Fechar">
-         <font>
-            <Font size="14.0" />
-         </font></Button>
-      <TextField fx:id="inputTF" alignment="CENTER" editable="false" layoutX="5.0" layoutY="5.0" prefHeight="27.0" prefWidth="311.0">
-         <font>
-            <Font size="24.0" />
-         </font></TextField>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      onDragDetected="#onHelloButtonClick" prefHeight="130.0" prefWidth="320.0" style="-fx-background-color: #00ced1;"
+      xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.numerosmega.NumerosMegaController">
+   <Button layoutX="5.0" layoutY="74.0" onAction="#onHelloButtonClick" prefHeight="40.0"
+           prefWidth="150.0" text="Gerar">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Button>
+   <Button fx:id="fecharBT" layoutX="166.0" layoutY="74.0" prefHeight="40.0" prefWidth="150.0" text="Fechar">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="inputTF" alignment="CENTER" editable="false" layoutX="5.0" layoutY="5.0" prefHeight="27.0"
+              prefWidth="311.0">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </TextField>
 
-   </children>
 </Pane>
