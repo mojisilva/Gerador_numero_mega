@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class NumerosMegaApplication extends Application {
     @Override
@@ -14,7 +15,7 @@ public class NumerosMegaApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(NumerosMegaApplication.class.getResource("numerosmega-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 130);
         stage.setTitle("Gerador Mega-Sena");
-        stage.getIcons().add(new Image(NumerosMegaApplication.class.getResourceAsStream("icon.png")));
+        stage.getIcons().add(new Image(Objects.requireNonNull(NumerosMegaApplication.class.getResourceAsStream("icon.png"))));
         stage.setScene(scene);
         stage.show();
     }
