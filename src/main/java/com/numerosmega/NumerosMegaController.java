@@ -18,7 +18,7 @@ public class NumerosMegaController {
     private Button fecharBT;
 
     @FXML
-    protected void onHelloButtonClick() {
+    protected void onButtonClick() {
         for (int i = 0; i<6; i++){
             while(numeros.size() <6 ){
                 numeros.add(gerador.nextInt(1, 60));
@@ -27,10 +27,9 @@ public class NumerosMegaController {
             inputTF.setText(formato.replace("[", "").replace(",", " -").replace("]", ""));
         }
         numeros.clear();
-        fechar();
     }
-
+    @FXML
     private void fechar() {
-        fecharBT.setOnAction(ActionEvent -> System.exit(0));
+        System.exit(0);
     }
 }
