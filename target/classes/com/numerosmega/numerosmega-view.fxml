@@ -10,7 +10,7 @@
          <Font size="14.0" />
       </font>
    </Button>
-   <Button fx:id="fecharBT" layoutX="166.0" layoutY="74.0" onAction="#fechar" prefHeight="40.0" prefWidth="150.0" text="Fechar">
+   <Button layoutX="166.0" layoutY="74.0" onAction="#fechar" prefHeight="40.0" prefWidth="150.0" text="Fechar">
       <font>
          <Font size="14.0" />
       </font>

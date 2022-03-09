@@ -1,7 +1,6 @@
 package com.numerosmega;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import java.util.LinkedHashSet;
 import java.util.Random;
@@ -15,13 +14,10 @@ public class NumerosMegaController {
     private TextField inputTF;
 
     @FXML
-    private Button fecharBT;
-
-    @FXML
     protected void onButtonClick() {
         for (int i = 0; i<6; i++){
             while(numeros.size() <6 ){
-                numeros.add(gerador.nextInt(1, 60));
+                numeros.add(gerador.nextInt(1,60));
             }
             formato = String.valueOf(numeros);
             inputTF.setText(formato.replace("[", "").replace(",", " -").replace("]", ""));
